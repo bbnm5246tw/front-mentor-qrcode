@@ -1,0 +1,100 @@
+// reset css
+body {
+  margin: 0;
+  padding: 0;
+}
+* {
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0px;
+  padding: 0px;
+}
+ul,
+ol,
+li {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+
+
+
+// basic setting
+$white: hsl(0, 0%, 100%);
+$light-gray: hsl(212, 45%, 89%);
+$Grayish-blue: hsl(220, 15%, 55%);
+$dark-blue: hsl(218, 44%, 22%);
+$font-wight: 400, 700;
+// start css
+
+#main-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $light-gray;
+  margin: 100px 100px;
+}
+.main-component {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  height: 500px;
+  margin: 300px 0;
+  border-radius: 15px;
+  align-items: center;
+  background-color: $white;
+}
+
+.image-part {
+  // width: 380px;
+  margin: 10px;
+  // outline: 1px solid green;
+  overflow: hidden;
+  border-radius: 15px;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.text-part {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  .text_1 {
+    font-family: "Outfit", sans-serif;
+    font-weight: 700;
+    margin: 10px 30px;
+    font-size: 21px;
+    // outline: 1px solid black;
+  }
+  .text_2 {
+    font-family: "Baloo 2", sans-serif;
+    font-weight: 400;
+    margin: 0 60px;
+    font-size: 15px;
+  }
+}
+
+.attribution {
+  position: absolute;
+  top: 100px;
+}
+
+@media (max-width: 375px) {
+  .main-component {
+    width: 320px;
+    height: 500px;
+    margin: 300px 0;
+  }
+}
